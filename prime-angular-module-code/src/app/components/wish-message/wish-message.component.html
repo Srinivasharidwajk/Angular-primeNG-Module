@@ -1,0 +1,22 @@
+<section class="p-p-3">
+  <div class="p-editor-container">
+    <div class="p-grid">
+      <div class="p-col-8">
+        <div class="p-card">
+          <div class="p-card-body">
+            <h3>{{message}}</h3>
+            <button
+              (click)="printMessage('Good Morning')"
+              pButton pRipple type="button" label="Good Morning" class="p-button-success"></button>
+            <button
+              (click)="printMessage('Good Afternoon')"
+              pButton pRipple type="button" label="Good Afternoon" class="p-button-warning"></button>
+            <button
+              (click)="printMessage('Good Evening')"
+              pButton pRipple type="button" label="Good Evening" class="p-button-danger"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

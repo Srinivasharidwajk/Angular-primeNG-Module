@@ -1,0 +1,47 @@
+<section class="p-p-3">
+  <div class="p-editor-container">
+    <div class="p-grid">
+      <div class="p-col">
+        <h3>Product Cart</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at blanditiis consectetur consequatur dolorem dolorum fugit, laudantium minima modi obcaecati quae rem sunt, suscipit. Aspernatur aut deserunt harum officiis quae.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="p-p-3">
+  <div class="p-editor-container">
+    <div class="p-grid">
+      <div class="p-col">
+        <p-table [value]="products">
+          <ng-template pTemplate="header">
+            <tr>
+              <th>SNO</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Total</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-product>
+              <tr>
+                <td>{{product.sno}}</td>
+                <td>
+                  <img [src]="product.image" width="50" height="50" alt="">
+                </td>
+                <td>{{product.name}}</td>
+                <td>{{product.price | currency : 'INR'}}</td>
+                <td>
+                  <i class="pi pi-minus-circle" (click)="clickDecrQty(product.sno)"></i>
+                  {{product.qty}}
+                  <i class="pi pi-plus-circle" (click)="clickIncrQty(product.sno)"></i>
+                </td>
+                <td>{{product.price * product.qty | currency : 'INR'}}</td>
+              </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </div>
+  </div>
+</section>

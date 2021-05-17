@@ -1,0 +1,15 @@
+"@angular/animations": "^11.0.5",
+"@angular/cdk": "^11.0.3",
+"primeflex": "^2.0.0",
+"primeicons": "^4.1.0",
+"primeng": "^11.1.0-rc.1",
+
+npm install @angular/animations @angular/cdk primeflex primeicons primeng
+
+------------------
+angular.json
+-----------------
+"node_modules/primeicons/primeicons.css",
+"node_modules/primeng/resources/themes/saga-blue/theme.css",
+"node_modules/primeng/resources/primeng.min.css",
+"node_modules/primeflex/primeflex.css",

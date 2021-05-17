@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+button{
+  margin: 0 5px 0 5px !important;
+}
+p-menubar h3{
+  margin: 0;
+}
+.p-menubar{
+  background-color: teal !important;
+  color: white;
+  padding: 15px;
+}
+.p-card{
+  box-shadow: 0 0 3px gray;
+}
